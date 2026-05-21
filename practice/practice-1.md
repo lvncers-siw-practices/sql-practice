@@ -11,6 +11,8 @@ WHERE
     Code = 'JPN';
 ```
 
+`Name = 'Japan'` でも結果は同じになるが、 `Code` は PRIMARY KEY なので重複することはなくこちらの方が安全。
+
 ## 2. 面積(SurfaceArea)が広い国上位 10 ヶ国
 
 ```sql
