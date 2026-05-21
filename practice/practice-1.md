@@ -294,7 +294,52 @@ ORDER BY
     Percentage DESC;
 ```
 
-## 9. GNP が 150%以上アップしている国
+## 9. 地域がMelanesiaとMicronesiaとPolynesiaの国 (2026ver)
+
+```sh
++---------------------------------+------------+
+| name                            | region     |
++---------------------------------+------------+
+| Fiji Islands                    | Melanesia  |
+| New Caledonia                   | Melanesia  |
+| Papua New Guinea                | Melanesia  |
+| Solomon Islands                 | Melanesia  |
+| Vanuatu                         | Melanesia  |
+| Guam                            | Micronesia |
+| Kiribati                        | Micronesia |
+| Marshall Islands                | Micronesia |
+| Micronesia, Federated States of | Micronesia |
+| Nauru                           | Micronesia |
+| Northern Mariana Islands        | Micronesia |
+| Palau                           | Micronesia |
+| American Samoa                  | Polynesia  |
+| Cook Islands                    | Polynesia  |
+| French Polynesia                | Polynesia  |
+| Niue                            | Polynesia  |
+| Pitcairn                        | Polynesia  |
+| Samoa                           | Polynesia  |
+| Tokelau                         | Polynesia  |
+| Tonga                           | Polynesia  |
+| Tuvalu                          | Polynesia  |
+| Wallis and Futuna               | Polynesia  |
++---------------------------------+------------+
+22 rows in set (0.001 sec)
+```
+
+```sql
+SELECT
+   name,
+   region
+FROM
+   country
+WHERE
+   region IN ('melanesia', 'micronesia', 'polynesia')
+ORDER BY
+   region,
+   name;
+```
+
+## 9. GNP が 150%以上アップしている国 (2025ver)
 
 ```sql
 +---------------------------------------+---------+---------+------------+
