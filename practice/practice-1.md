@@ -49,7 +49,8 @@ SELECT
 FROM
     country
 ORDER BY
-    SurfaceArea DESC
+    SurfaceArea DESC,
+    Name
 LIMIT 10;
 ```
 
@@ -77,7 +78,8 @@ FROM
 WHERE
     LifeExpectancy >= 80
 ORDER BY
-    LifeExpectancy DESC;
+    LifeExpectancy DESC,
+    Name;
 ```
 
 ## 4. 地域(Region)の一覧
@@ -158,7 +160,8 @@ FROM
 WHERE
     Population BETWEEN 5000000 AND 8000000
 ORDER BY
-    Population DESC;
+    Population DESC,
+    CountryCode;
 ```
 
 ## 6. new が含まれる世界の都市
@@ -291,7 +294,8 @@ WHERE
     Language = 'Japanese'
     AND IsOfficial != 'T'
 ORDER BY
-    Percentage DESC;
+    Percentage DESC,
+    CountryCode;
 ```
 
 ## 9. 地域がMelanesiaとMicronesiaとPolynesiaの国 (2026ver)
