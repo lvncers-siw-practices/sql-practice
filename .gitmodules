@@ -1,0 +1,8 @@
+[submodule ".claude"]
+	path = .claude
+	url = git@github.com:lvncers-template/ai-configs.git
+	branch = claude-export
+[submodule ".cursor"]
+	path = .cursor
+	url = git@github.com:lvncers-template/ai-configs.git
+	branch = cursor-export
